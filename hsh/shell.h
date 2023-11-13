@@ -59,8 +59,8 @@ typedef struct builtins
 
 /*========  shell_main.c  ========*/
 
-/* Inicializestruct with Info the program */
-void the_inicialize_data(data_of_program *data, int arc, char *argv[], char **env);
+/* inicialize struct with inf the program */
+void init_data(data_of_program *data, int arc, char *argv[], char **env);
 
 /* Makes infinite loop to show the prompt*/
 void the_sisifo(char *prompt, data_of_program *data);
@@ -86,7 +86,7 @@ void expnd_variables(data_of_program *data);
 /* expand aliases */
 void expnd_alias(data_of_program *data);
 
-/* append the str to the end of the buffer*/
+/* append the str to the end of the buff*/
 int buff_add(char *buffer, char *str_to_add);
 
 
@@ -206,19 +206,19 @@ int the_print_error(int errorcode, data_of_program *data);
 
 /*======== the_helpers_string.c ========*/
 
-/* Counts the number of characters of a string */
+/* Count nbr of chars of str */
 int str_length(char *string);
 
-/* Duplicates an string */
+/* Dupl a str */
 char *str_duplicate(char *string);
 
-/* Compares two strings */
+/* Comp 2 strs */
 int str_compare(char *string1, char *string2, int number);
 
-/* Concatenates two strings */
+/* Concat 2 strs */
 char *str_concat(char *string1, char *string2);
 
-/* Reverse a string */
+/* Reverse str */
 void str_reverse(char *string);
 
 
